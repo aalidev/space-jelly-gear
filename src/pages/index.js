@@ -31,7 +31,7 @@ export default function Home({ home, products }) {
                 className={styles.heroImage}
                 src={heroBackground.url}
                 width={heroBackground.width}
-                height={heroBackground.heright}
+                height={heroBackground.height}
                 alt=""
               />
             </a>

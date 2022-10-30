@@ -61,7 +61,7 @@ export default function Home({ home, products }) {
                 <p>
                   <Button
                     className="snipcart-add-item"
-                    data-item-id={product.id}
+                    data-item-id={product.snipcart.id}
                     data-item-price={product.price}
                     data-item-url={`/products/${product.slug}`}
                     data-item-image={product.image.url}
@@ -111,6 +111,7 @@ export async function getStaticProps() {
             width
             url
           }
+          snipcart
         }
       }
     `,

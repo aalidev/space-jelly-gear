@@ -34,7 +34,7 @@ export default function Product({ product }) {
             <p className={styles.productBuy}>
               <Button
                 className="snipcart-add-item"
-                data-item-id={product.id}
+                data-item-id={product.snipcart.id}
                 data-item-price={product.price}
                 data-item-url={`/products/${product.slug}`}
                 data-item-image={product.image.url}
@@ -69,6 +69,7 @@ export async function getStaticProps({ params }) {
             url
           }
           slug
+          snipcart
         }
       }
     `,
@@ -96,14 +97,7 @@ export async function getStaticPaths() {
     query: gql`
       query PageProducts {
         products {
-          name
-          price
           slug
-          image {
-            height
-            width
-            url
-          }
         }
       }
     `,

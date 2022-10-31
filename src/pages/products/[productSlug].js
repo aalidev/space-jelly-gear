@@ -69,8 +69,6 @@ export async function getStaticProps({ params }) {
             width
             url
           }
-          slug
-          snipcart
         }
       }
     `,

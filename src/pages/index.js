@@ -112,8 +112,6 @@ export async function getStaticProps() {
             width
             url
           }
-          snipcart
-          stock
         }
       }
     `,

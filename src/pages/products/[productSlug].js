@@ -34,12 +34,12 @@ export default function Product({ product }) {
             <p className={styles.productBuy}>
               <Button
                 className="snipcart-add-item"
-                data-item-id={product.snipcart.id}
+                data-item-id={product.id}
                 data-item-price={product.price}
                 data-item-url={`/products/${product.slug}`}
                 data-item-image={product.image.url}
                 data-item-name={product.name}
-                data-item-quantity={product.snipcart.stock}
+                data-item-quantity={product?.stock}
               >
                 Add to Cart
               </Button>

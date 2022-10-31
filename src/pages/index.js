@@ -66,7 +66,7 @@ export default function Home({ home, products }) {
                     data-item-url={`/products/${product.slug}`}
                     data-item-image={product.image.url}
                     data-item-name={product.name}
-                    data-item-stock={product.stock}
+                    data-item-quantity={product.snipcart.stock}
                   >
                     Add to Cart
                   </Button>
